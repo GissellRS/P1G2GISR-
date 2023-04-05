@@ -1,0 +1,25 @@
+var edad = 19 
+edad++:
+
+var puntos_flotantes = 12,5;
+/*
+operadores aritmeticos 
+division =/
+multiplicacion =
+suma = +
+resta = -
+modulo= %
+/*
+
+var resultado_suma = edad % 2; 
+
+console.log(resultado_par(3));
+
+function es par(numero){
+      if(numero % 2==0){
+       return true;
+   }
+      return false;
+ }
+
+console.log(Math.sqrt(4));
