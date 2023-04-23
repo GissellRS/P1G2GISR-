@@ -1,0 +1,289 @@
+<!DOCTYPE html >
+
+
+<body style="color:aquamarine">
+
+</body>
+<center>
+<h1 style="color:aqua; font-size: 40px;">EJEMPLOS DE CSS</h1>
+    
+    <h2 class="letra_negra fondo_blanco">
+
+
+<html> 
+
+    <body>
+        
+        <video
+        style="position: fixed; left: 0; top: 0; height: 200%; z-index: -1;"
+        src="https://thumbs.dreamstime.com/b/fondo-programado-del-software-c%C3%B3digo-html-d-rinden-102733125.jpg"
+        autoplay="true"
+        muted="true"
+        loop="true"
+        poster="https://thumbs.dreamstime.com/b/fondo-programado-del-software-c%C3%B3digo-html-d-rinden-102733125.jpg"></video>
+
+    </body>
+
+
+    <br>
+    
+    
+        <img src="https://www.shutterstock.com/image-illustration/css-code-on-dark-background-260nw-1893752428.jpg"
+    width="400"
+           height="200">
+
+    
+
+    
+
+
+</p>
+
+<br>
+<p style="color:aliceblue">el código del archivo CSS, que se llamará “estilo.css” y se debe ubicar 
+    en el mismo directorio que la página “index.html”. 
+    En caso de querer renombrar el archivo o colocarlo dentro de un subdirectorio, como
+     se hace normalmente, se debe modificar la ruta del enlace que se encuentra entre head y /head.
+
+     
+     <br>
+     <br>
+     <br>
+
+     /*  CAPAS CONTENEDORAS  */
+ 
+#izquierda  {
+  width: 170px;
+  float: left;
+  }
+ 
+.derecha {
+  width: 750px;
+  float: left;
+  }
+  <br>
+  <br>
+
+
+/*  ELEMENTOS DEL MENU LATERAL  */
+ 
+#menu {
+  padding:0;
+  margin:0 auto;
+  list-style-type:none;
+  width:160px;
+  height:312px;
+  }
+  <br>
+  <br>
+#menu li a {
+  height:30px;
+  width:160px;
+  float:left;
+  border-bottom:2px solid #fff;
+  overflow: hidden;
+  }
+  <br>
+  <br>
+#menu li a img {
+  border:0;
+  }
+#menu li a:hover {
+  height:120px;
+  }
+  <br>
+  <br>
+/*  ELEMENTOS DEL MENU SUPERIOR */
+<br>
+<br>
+ 
+#menu2 {
+  padding:0;
+  margin:0 auto;
+  list-style-type:none;
+  height:120px;
+  width:354px;
+  }
+  <br>
+  <br>
+#menu2 li a {
+  width:30px;
+  height:120px;
+  float:left;
+  border-right:2px solid #fff;
+  overflow: hidden;
+  }
+  <br>
+  <br>
+#menu2 li a img {
+  border:0;
+  }<br>
+  <br>
+#menu2 li a:hover {
+  background:#eee;
+  width:160px;
+  }
+  <br>
+  <br>
+ 
+/*  ELEMENTOS DE LA GALERIA DE IMAGENES */
+<br>
+<br>
+ 
+#galeria {
+  padding:0;
+  margin:40px auto 0 auto;
+  list-style-type:none;
+  height:300px;
+  width:774px;
+  border:1px solid #888;
+  }
+  <br>
+  <br>
+#galeria li {
+  width:60px;
+  height:300px;
+  float:left;
+  border-left:2px solid #000;
+  }
+  <br>
+  <br>
+#galeria li img {
+  height:300px;
+  width:60px;
+  border:0;
+  }
+  <br>
+  <br>
+#galeria li:hover {
+  background:#eee;
+  width:400px;
+  }
+  <br>
+  <br>
+#galeria li:hover img {
+  width:400px;
+  }
+     
+     
+               
+</p>
+
+
+
+    
+
+<br>
+
+<titulo>Explicación</titulo>
+<p style="color:aliceblue"> Explicación
+    En primer lugar diremos que el ejemplo se encuentra dividido en tres capas flotantes, una a la izquierda, 
+    en forma de columna lateral, donde se ubica el ejemplo de menú vertical. A la derecha, dos capas contienen
+     el menú horizontal y el ejemplo de una galería de imágenes, una arriba y la otra abajo. Las capas utilizadas 
+    utilizan un identificador (#izquierda) y una clase (.derecha) y son flotantes a la izquierda.
+    </p>
+    <br>
+    
+    
+        
+    
+
+<br>
+<br>
+
+<titulo>La capa contenedora</titulo>
+    
+<p style="color:aliceblue"> En los menús y la galería se emplea el mismo código con leves modificaciones. En primer lugar,
+     debemos limitar el tamaño de la capa que contiene el menú, que tiene el identificador #menu en el archivo CSS,
+      lo que debe ser bien calculado ya que un error en esto puede originar fallas en el funcionamiento.
+       El ancho de esta capa debe ser el ancho de las imágenes que se utilizarán, que en este caso es de 160 pixeles.
+   El cálculo debe hacerse en la altura de la capa contenedora. Colocaremos siete imágenes, que en su tamaño plegado 
+   tendrán 30 pixeles mas 2 pixeles del borde blanco, es decir, un total de 32 pixeles, y en su tamaño desplegado es de 120. 
+   Como el tamaño de la capa debe ser igual al de seis imágenes plegadas y una desplegada,
+    el cálculo que se debe hacer es (6*32) + 120, lo que da un total de 312 pixeles.
+    Otras propiedades utilizadas son el margen, que en este caso es 0 auto, para que se
+     centre en la capa contenedora; en esta capa también se determina que las listas no tendrán estilo de lista,
+      para que no aparezcan los marcadores de ítems.
+</p>
+
+
+<p style="color:aliceblue">En el caso de los menús, cada uno de los ítems de la lista contiene
+     un enlace, por lo que para darles el formato a todos, utilizaremos #menu li a 
+     (formato del ítem que contiene un enlace dentro de la capa #menu).
+ Las propiedades que determinaremos son las de las imágenes contraídas,
+ por lo que la altura será de 30 pixeles. Para que las capas se superpongan y 
+ no queden desplegadas (válido solo para los menús, ya que el caso de la galería tiene
+  la diferencia que las imágenes contraídas están redimensionadas), 
+  es necesario que los ítems de menú sean flotantes, lo que queda indicado con
+   la propiedad correspondiente.Para ganar en efecto decorativo, se ha determinado 
+   que cada ítem de menú tenga un borde blanco de 2 pixeles. Luego, se determina que
+    todo lo que sobresalga de las dimensiones de la capa quede invisible mediante 
+    la propiedad “overflow:hidden”. De no colocarse, todas las imágenes quedarán en su 
+    tamaño original.
+
+</p>
+<img src ="https://4.bp.blogspot.com/_livappsuQKI/Sinl-LCIUNI/AAAAAAAAADw/Lbg0c-ubHRc/s280/img2_blog_8.jpg"
+width="500"
+height="300">
+
+<br>
+<br>
+<titulo>La capa contenedora</titulo>
+<p style="color:aliceblue">Imágenes con enlaces
+Las imágenes con enlace tienen por defecto un borde azul de 1 pixel, que debe ser eliminado para que el mismo no se vea,
+ utilizando la propiedad “border: 0” en “#menu li a img”, es decir, en las imágenes con enlace en un ítem de menú
+  dentro de la capa “#menu”.
+</p>
+<img src ="https://i.imgur.com/A8O44.jpg"
+width="500"
+height="300">
+
+<br>
+<br>
+<titulo>Las imágenes desplegadas</titulo>
+<p style="color:aliceblue">Las imágenes desplegadas
+    Cuando el puntero pasa o se posa sobre una de las imágenes contraídas, se activa
+     la pseudoclase :hover, que en este caso determina que la altura de la imagen 
+     pase de los 30 pixeles a los 120 pixeles, que es la medida real de cada una de las imágenes utilizadas.
+</p>
+
+<br>
+<br>
+<titulo>Las imágenes desplegadas</titulo>
+<p style="color:aliceblue">El efecto
+    Cuando una de las imágenes contraídas, desplaza hacia abajo a las capas que se encuentran debajo de 
+    ella, excepto la última, que solo completa el espacio disponible en la capa #menu, haciendo que
+     se parezca a un efecto slide rápido.
+</p>
+
+<br>
+<br>
+<titulo>El menú horizontal</titulo>
+<p style="color:aliceblue">El menú horizontal
+    El caso del menú horizontal es igual que el anterior, con la excepción que la capa base, en este caso #menu2, 
+    es más ancha que alta, al igual que las dimensiones de las imágenes contraídas, con lo que el desplazamiento 
+    forzosamente se realiza hacia la derecha. El cálculo de las dimensiones de la capa #menu2 debe realizarse con el 
+    ancho de las imágenes, en lugar de la altura como en el caso anterior.
+    Otra diferencia, es que el borde de la capa contraída está a la izquierda.
+    <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAZOeWmeUMcg7ry3_To1z1Vloq_umWAgqOn5OO45Fpv4UHA8rP28dE22xffAH3eDJ-Tg&usqp=CAU"
+    width="900"
+    height="300">
+
+</p>
+
+<br>
+<br>
+<titulo>La galería de imágenes</titulo>
+<p style="color:aliceblue">La galería de imágenes
+    La galería de imágenes es igual al ejemplo del menú horizontal (puede hacerse también con desplazamiento vertical),
+     con la excepción de que no contiene enlaces, con lo que el código cambia ligeramente.
+    <img src ="https://m1.paperblog.com/i/62/627438/como-crear-una-galeria-flash-efecto-parte-2-L-ZnCdHV.jpeg"
+    width="500"
+    height="300">
+
+</p>
+
+
+
+</center>
+</html>
